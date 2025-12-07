@@ -32,6 +32,7 @@
             label4 = new Label();
             btnSave = new Button();
             button1 = new Button();
+            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)dgViewUsers).BeginInit();
             SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             btnSave.FlatAppearance.BorderColor = Color.RoyalBlue;
             btnSave.FlatAppearance.BorderSize = 2;
             btnSave.FlatStyle = FlatStyle.Flat;
-            btnSave.Font = new Font("Lucida Console", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSave.Font = new Font("Lucida Console", 9.75F, FontStyle.Bold);
             btnSave.ForeColor = Color.Gray;
             btnSave.Location = new Point(320, 66);
             btnSave.Margin = new Padding(2, 1, 2, 1);
@@ -90,11 +91,29 @@
             button1.Text = "Details";
             button1.UseVisualStyleBackColor = false;
             // 
+            // btnRefresh
+            // 
+            btnRefresh.BackColor = Color.AliceBlue;
+            btnRefresh.FlatAppearance.BorderColor = Color.RoyalBlue;
+            btnRefresh.FlatAppearance.BorderSize = 2;
+            btnRefresh.FlatStyle = FlatStyle.Flat;
+            btnRefresh.Font = new Font("Lucida Console", 9.75F, FontStyle.Bold);
+            btnRefresh.ForeColor = Color.Gray;
+            btnRefresh.Location = new Point(212, 66);
+            btnRefresh.Margin = new Padding(2, 1, 2, 1);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(104, 22);
+            btnRefresh.TabIndex = 11;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click_1;
+            // 
             // ListForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(431, 326);
+            Controls.Add(btnRefresh);
             Controls.Add(button1);
             Controls.Add(btnSave);
             Controls.Add(label4);
@@ -114,5 +133,6 @@
         private Label label4;
         private Button btnSave;
         private Button button1;
+        private Button btnRefresh;
     }
 }

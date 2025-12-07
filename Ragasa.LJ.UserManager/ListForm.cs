@@ -42,9 +42,10 @@ namespace Labitoria.JD.UserManager
             dgViewUsers.DataSource = users;
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+
+        private void btnRefresh_Click_1(object sender, EventArgs e)
         {
-            
+            LoadUsersToDataGridView();
         }
     }
 }
